@@ -114,25 +114,3 @@ class ItCompress(CompressionAlgorithm):
 			self.compression_stats['errors'] = self.verify(original, decoding_array)
 
 		return codes
-
-
-####
-"""
-Test code here
-"""
-####
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/electricity_nips/electricity.npy'
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/exchange_rate_nips/exchange_rate.npy'
-#data = np.load('/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/solar_nips/solar.npy')
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/taxi_30min/taxi.npy'
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/traffic_nips/traffic.npy'
-#data = np.load('/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/wiki-rolling_nips/wiki.npy')
-data = np.load('/Users/brunobarbarioli/Documents/Research/ts_compression/l2c/data/sensor.npy')[:4096*64,:]
-#normalize this data
-
-N,p = data.shape
-nn = ItCompress('quantize')
-nn.load(data)
-nn.compress()
-nn.decompress(data)
-print(nn.compression_stats)

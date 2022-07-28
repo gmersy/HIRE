@@ -324,56 +324,20 @@ def bisect(x):
     N = x.shape[0]
     return x[N // 2]
 
-####
-"""
-Test code here
-"""
-####
 
-## Simple data
-# data = np.array([[1.23, -3.5, 2.6, 15], [7.6, -10, 2.43, -7]]).T
-# data = np.array([[1.23, -3.5, 2.6, 15, 20, 13, 9, -17], [7.6, -10, 2.43, -7, 4.2, 7.9, 15.2, -17]]).T
-
-##Bruno
-#data = np.load('/Users/brunobarbarioli/Documents/Research/ts_compression/l2c/data_old/traffic.npy')[:4096*64,:]
-data = np.load('/Users/brunobarbarioli/Documents/Research/ts_compression/l2c/data/sensor_ht.npy')[:4096*128,]
-#data = np.load('/Users/brunobarbarioli/Documents/Research/ts_compression/l2c/data/bitcoin.npy', allow_pickle = True)[:4096*64,:]
-#data = np.load('/Users/brunobarbarioli/Documents/Research/ts_compression/l2c/data/power.npy')[:4096*256,:]
-#data = np.load('/Users/brunobarbarioli/Documents/Research/ts_compression/l2c/data/watch.npy')[:4096*64,-1:]
-#data = np.load('/Users/brunobarbarioli/Documents/Research/ts_compression/l2c/data/phones_accelerometer.npy')[:4096*64,1:2]
-
-## Gabe
-#data = np.load('/Users/gabemersy/Desktop/data/sensor.npy')[:4096*144,1:]
-#data = np.load('/Users/gabemersy/Desktop/data/gas.npy')[:4096*36,1:]
-
-##Sanjay
-#data = np.loadtxt('/Users/sanjaykrishnan/Downloads/HT_Sensor_UCIsubmission/HT_Sensor_dataset.dat')[:1024,1:2]
-#data = np.load('/Users/sanjaykrishnan/Downloads/ts_compression/l2c/data/electricity.npy')
-""""""
-##Test
-#N,p = data.shape
-
-#print(data.shape)
 """
 New parameter guide:
 
 * quantization + trc:      trc = True, quant = True
 * quantization + gzip:     trc = False, quant = True (untested)
-* Stavros method + gzip:   trc = False, quant = False
-* Stavros method + trc:    trc = True, quant = False (untested)
+* S method + gzip:   trc = False, quant = False
+* S method + trc:    trc = True, quant = False (untested)
 
 - ensure that error_thresh >= 0.001 (1e-3), as there might be rounding errors with anything less
 - larger block sizes tend to yield better compression ratios (confirm empirically)
 
 """
 
-nn = MultivariateHierarchical('hier', error_thresh = 0.001, blocksize=4096*4, start_level = 11, trc = True)
-nn.load(data)
-nn.compress()
-# note that the decoding error can be defined at decompression time
-# we would do so by specifying the parameter error_thresh = 0.1 for instance
-nn.decompress(data)
-print(nn.compression_stats)
 
 
 

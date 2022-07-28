@@ -107,30 +107,3 @@ class Spartan(CompressionAlgorithm):
 			self.compression_stats['errors'] = self.verify(original, codes)
 
 		return codes
-
-
-
-####
-"""
-Test code here
-"""
-####
-
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/electricity_nips/electricity.npy'
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/exchange_rate_nips/exchange_rate.npy'
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/solar_nips/solar.npy'
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/taxi_30min/taxi.npy'
-# '/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/traffic_nips/traffic.npy'
-# data = np.load('/Users/brunobarbarioli/Documents/Research/learning-to-compress-master/l2c/data/wiki-rolling_nips/wiki.npy')
-
-# #normalize this data
-# N,p = data.shape
-
-
-# nn = Spartan('quantize')
-# nn.load(data)
-# nn.compress()
-# nn.decompress(data)
-# print(nn.compression_stats)
-
-

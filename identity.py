@@ -197,21 +197,4 @@ class BitStripGZ(CompressionAlgorithm):
 					break
 
 		return vector
-		
 
-####
-"""
-Test code here
-"""
-####
-
-"""
-data = np.loadtxt('/Users/sanjaykrishnan/Downloads/test_comp/ColorHistogram.asc')[:,1:]
-#normalize this data
-N,p = data.shape
-nn = BitStripGZ('quantize')
-nn.load(data)
-nn.compress()
-nn.decompress(data)
-print(nn.compression_stats)
-"""
