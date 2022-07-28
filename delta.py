@@ -3,8 +3,8 @@ import os
 from timeit import default_timer as timer
 import math
 from core import *
-from greedy_column_selection import *
-from mtscompress_v2 import *
+# from greedy_column_selection import *
+# from mtscompress_v2 import *
 import random
 
 
