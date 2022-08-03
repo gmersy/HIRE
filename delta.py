@@ -5,7 +5,7 @@ import math
 from core import *
 # from greedy_column_selection import *
 # from mtscompress_v2 import *
-import random
+#import random
 
 
 class Sprintz(CompressionAlgorithm):
@@ -161,6 +161,7 @@ class SprintzGzip(CompressionAlgorithm):
 
 		return codes
 
+"""
 class SprintzLearnedGzip(CompressionAlgorithm):
 	def __init__(self, target, error_thresh=0.005, trc = False, col_sel_algo = None):
 		super().__init__(target, error_thresh)
@@ -172,9 +173,7 @@ class SprintzLearnedGzip(CompressionAlgorithm):
 	
 	def getModelSize(self):
 		return self.model_size
-
-	"""The main compression loop
-	"""
+		
 	def compress(self, lags = 1, param_error_thresh = 0.001):
 		N, p = self.N, self.p
 		start = timer()
@@ -241,3 +240,4 @@ class SprintzLearnedGzip(CompressionAlgorithm):
 			self.compression_stats['errors'] = self.verify(original, codes)
 
 		return codes
+"""
