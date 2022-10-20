@@ -1,0 +1,38 @@
+cargo:rerun-if-changed=CRoaring
+cargo:rerun-if-env-changed=ROARING_ARCH
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("3")
+HOST = Some("x86_64-apple-darwin")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("false")
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,fxsr,llvm14-builtins-abi,sse,sse2,sse3,ssse3")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,fxsr,llvm14-builtins-abi,sse,sse2,sse3,ssse3")
+running: "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-arch" "x86_64" "-Wall" "-Wextra" "-Wno-unused-function" "-o" "/Users/gabemersy/Desktop/buff-master/database/target/release/build/croaring-sys-10fc174520d3de16/out/CRoaring/roaring.o" "-c" "CRoaring/roaring.c"
+exit status: 0
+AR_x86_64-apple-darwin = None
+AR_x86_64_apple_darwin = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/Users/gabemersy/Desktop/buff-master/database/target/release/build/croaring-sys-10fc174520d3de16/out/libroaring.a" "/Users/gabemersy/Desktop/buff-master/database/target/release/build/croaring-sys-10fc174520d3de16/out/CRoaring/roaring.o"
+exit status: 0
+running: "ar" "s" "/Users/gabemersy/Desktop/buff-master/database/target/release/build/croaring-sys-10fc174520d3de16/out/libroaring.a"
+exit status: 0
+cargo:rustc-link-lib=static=roaring
+cargo:rustc-link-search=native=/Users/gabemersy/Desktop/buff-master/database/target/release/build/croaring-sys-10fc174520d3de16/out

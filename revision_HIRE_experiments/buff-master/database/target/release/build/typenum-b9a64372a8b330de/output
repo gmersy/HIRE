@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/gabemersy/Desktop/buff-master/database/target/release/build/typenum-b9a64372a8b330de/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/gabemersy/Desktop/buff-master/database/target/release/build/typenum-b9a64372a8b330de/out/op.rs

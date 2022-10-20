@@ -1,0 +1,106 @@
+CMAKE_TOOLCHAIN_FILE_x86_64-apple-darwin = None
+CMAKE_TOOLCHAIN_FILE_x86_64_apple_darwin = None
+HOST_CMAKE_TOOLCHAIN_FILE = None
+CMAKE_TOOLCHAIN_FILE = None
+CMAKE_GENERATOR_x86_64-apple-darwin = None
+CMAKE_GENERATOR_x86_64_apple_darwin = None
+HOST_CMAKE_GENERATOR = None
+CMAKE_GENERATOR = None
+CMAKE_PREFIX_PATH_x86_64-apple-darwin = None
+CMAKE_PREFIX_PATH_x86_64_apple_darwin = None
+HOST_CMAKE_PREFIX_PATH = None
+CMAKE_PREFIX_PATH = None
+CMAKE_x86_64-apple-darwin = None
+CMAKE_x86_64_apple_darwin = None
+HOST_CMAKE = None
+CMAKE = None
+running: "cmake" "/Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DCMAKE_INSTALL_PREFIX=/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Release"
+-- The C compiler identification is AppleClang 11.0.3.11030032
+-- The CXX compiler identification is AppleClang 11.0.3.11030032
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Looking for byteswap.h
+-- Looking for byteswap.h - not found
+-- Looking for sys/endian.h
+-- Looking for sys/endian.h - not found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - found
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for sys/uio.h
+-- Looking for sys/uio.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for windows.h
+-- Looking for windows.h - not found
+-- Looking for zlibVersion in z
+-- Looking for zlibVersion in z - found
+-- Looking for lzo1x_1_15_compress in lzo2
+-- Looking for lzo1x_1_15_compress in lzo2 - not found
+-- Performing Test HAVE_BUILTIN_EXPECT
+-- Performing Test HAVE_BUILTIN_EXPECT - Success
+-- Performing Test HAVE_BUILTIN_CTZ
+-- Performing Test HAVE_BUILTIN_CTZ - Success
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build
+running: "cmake" "--build" "." "--target" "snappy" "--config" "Release" "--parallel" "8"
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -S/Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy -B/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build --check-build-system CMakeFiles/Makefile.cmake 0
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/Makefile2 snappy
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -S/Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy -B/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build --check-build-system CMakeFiles/Makefile.cmake 0
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_progress_start /Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles 5
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/Makefile2 CMakeFiles/snappy.dir/all
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/snappy.dir/build.make CMakeFiles/snappy.dir/depend
+cd /Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build && /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_depends "Unix Makefiles" /Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy /Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy /Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build /Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build /Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/snappy.dir/DependInfo.cmake --color=
+Dependee "/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/snappy.dir/DependInfo.cmake" is newer than depender "/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/snappy.dir/depend.internal".
+Dependee "/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/snappy.dir/depend.internal".
+Scanning dependencies of target snappy
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/snappy.dir/build.make CMakeFiles/snappy.dir/build
+[ 20%] Building CXX object CMakeFiles/snappy.dir/snappy-c.cc.o
+/usr/bin/c++  -DHAVE_CONFIG_H -I/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build -I/Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/snappy.dir/snappy-c.cc.o -c /Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy/snappy-c.cc
+[ 40%] Building CXX object CMakeFiles/snappy.dir/snappy-sinksource.cc.o
+/usr/bin/c++  -DHAVE_CONFIG_H -I/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build -I/Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/snappy.dir/snappy-sinksource.cc.o -c /Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy/snappy-sinksource.cc
+[ 60%] Building CXX object CMakeFiles/snappy.dir/snappy-stubs-internal.cc.o
+/usr/bin/c++  -DHAVE_CONFIG_H -I/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build -I/Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/snappy.dir/snappy-stubs-internal.cc.o -c /Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy/snappy-stubs-internal.cc
+[ 80%] Building CXX object CMakeFiles/snappy.dir/snappy.cc.o
+/usr/bin/c++  -DHAVE_CONFIG_H -I/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build -I/Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/snappy.dir/snappy.cc.o -c /Users/gabemersy/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-snappy-sys-0.1.2/snappy/snappy.cc
+[100%] Linking CXX static library libsnappy.a
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P CMakeFiles/snappy.dir/cmake_clean_target.cmake
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/snappy.dir/link.txt --verbose=1
+/usr/bin/ar qc libsnappy.a  CMakeFiles/snappy.dir/snappy-c.cc.o CMakeFiles/snappy.dir/snappy-sinksource.cc.o CMakeFiles/snappy.dir/snappy-stubs-internal.cc.o CMakeFiles/snappy.dir/snappy.cc.o
+/usr/bin/ranlib libsnappy.a
+[100%] Built target snappy
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_progress_start /Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles 0
+cargo:root=/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out
+cargo:rustc-link-search=native=/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build
+cargo:rustc-link-lib=static=snappy
+cargo:include=/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build
+cargo:rustc-link-lib=c++

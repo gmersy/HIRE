@@ -1,0 +1,9 @@
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/install/strip.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/install.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/list_install_components.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/rebuild_cache.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/edit_cache.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/install/local.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/snappy.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/test.dir
+/Users/gabemersy/Desktop/buff-master/database/target/release/build/parity-snappy-sys-99f2f878205fdc9d/out/build/CMakeFiles/snappy_unittest.dir

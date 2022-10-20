@@ -1,0 +1,1 @@
+/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/snappy_unittest.dir/snappy_unittest.cc.o CMakeFiles/snappy_unittest.dir/snappy-test.cc.o  -o snappy_unittest  libsnappy.a -lz 

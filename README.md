@@ -1,4 +1,12 @@
-# HIRE: Hierarchical Residual Encoding for Multiresolution Compression
+# HIRE: Hierarchical Residual Encoding for Multiresolution Time Series Compression
+
+## (NEW) revision experiments
+- `cd revision_HIRE_experiments/`
+- Place the datasets in the `datasets/` directory (from the below Google Drive link)
+1) To run LFZip, create a conda virtual environment and `conda install lfzip`. Then run `python3 experiments_LFZip.py`
+2) To run Buff, first install the rust programming language on your local machine: https://www.rust-lang.org/tools/install. Then `cd buff-master/database` and `python3 buff_experiments.py`
+3) To run the optimal splitting experiment `python3 optimal_splitting_experiments.py` For the ablation study of the optimal split, run `python3 optimal_splitting_experiments_ablation.py`
+4) To run the experiments comparing the different error functions at various levels of the hierarchy, run `python3 experiments_other_errs.py`
 
 ## Dataset files
 Download from the following Google Drive link: https://drive.google.com/drive/folders/1gxU9GskX9f60meHUnwcaqs0FvE75tuEN?usp=sharing
