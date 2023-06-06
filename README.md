@@ -1,5 +1,5 @@
 # HIRE: Hierarchical Residual Encoding for Multiresolution Time Series Compression
-Welcome to the repository accompanying our SIGMOD '23 paper [https://dl.acm.org/doi/10.1145/3588953](Hierarchical Residual Encoding for Multiresolution Time Series Compression). In our paper, we propose a new type of compression algorithm called HIRE that produces an encoding for time series data that can be decoded at multiple error bounds (thresholds). A sequence of pooling and spline operations is constructed, and these operations are applied recursively to an error vector. This repository can be used to reproduce the main results of the paper, or to explore how HIRE could work in your own system.  
+Welcome to the repository accompanying our SIGMOD '23 paper [Hierarchical Residual Encoding for Multiresolution Time Series Compression](https://dl.acm.org/doi/10.1145/3588953). In our paper, we propose a new type of compression algorithm called HIRE that produces an encoding for time series data that can be decoded at multiple error bounds (thresholds). A sequence of pooling and spline operations is constructed, and these operations are applied recursively to an error vector. This repository can be used to reproduce the main results of the paper, or to explore how HIRE could work in your own system.  
 
 
 ## Dataset files
