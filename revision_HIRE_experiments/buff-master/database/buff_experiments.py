@@ -36,16 +36,16 @@ def run_experiment(dataset_path, precision = 6):
         output = subprocess.run(CMD_PREFIX + [filename+".csv"] + CMD_MIDFIX + [str(10**precision)] + CMD_SUFFIX, stdout=subprocess.PIPE)
         log_text = output.stdout.decode('utf-8')
         try:
-            compression_ratio, compress_throughput, decompress_throughput = parse_log(log_text)
+            compression_ratio, compress_ltncy, decompress_ltncy = parse_log(log_text)
         except:
             continue
-        result.append([filename, compression_ratio, compress_throughput, decompress_throughput])
+        result.append([filename, compression_ratio, float(compress_ltncy)/1e9, float(decompress_ltncy)/1e9])
         print(filename, data.shape)
         # os.remove("temp_data.csv")
     return result
 
 results = run_experiment("../../datasets", 6)
 
-with open("buff_results.csv", "w") as file:
+with open("buff_results_latencies.csv", "w") as file:
     writer = csv.writer(file)
     writer.writerows(results)

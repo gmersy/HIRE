@@ -83,8 +83,8 @@ pub fn run_buff_simd_encoding_decoding(test_file:&str, scl:usize, pred: f64) {
 
     println!("Performance:{},{},{},{},{},{},{},{},{},{}", test_file, scl, pred,
              comp_size as f64/ org_size as f64,
-             1000000000.0 * org_size as f64 / duration1.as_nanos() as f64 / 1024.0/1024.0,
-             1000000000.0 * org_size as f64 / duration2.as_nanos() as f64 / 1024.0/1024.0,
+             duration1.as_nanos() as f64,
+             duration2.as_nanos() as f64,
              1000000000.0 * org_size as f64 / duration3.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration4.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration5.as_nanos() as f64 / 1024.0/1024.0,
@@ -153,8 +153,8 @@ pub fn run_buff_encoding_decoding(test_file:&str, scl:usize, pred: f64) {
 
     println!("Performance:{},{},{},{},{},{},{},{},{},{}", test_file, scl, pred,
              comp_size as f64/ org_size as f64,
-             1000000000.0 * org_size as f64 / duration1.as_nanos() as f64 / 1024.0/1024.0,
-             1000000000.0 * org_size as f64 / duration2.as_nanos() as f64 / 1024.0/1024.0,
+             duration1.as_nanos() as f64,
+             duration2.as_nanos() as f64,
              1000000000.0 * org_size as f64 / duration3.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration4.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration5.as_nanos() as f64 / 1024.0/1024.0,
@@ -231,8 +231,8 @@ pub fn run_buff_encoding_decoding_mybitvec(test_file:&str, scl:usize,pred: f64) 
 
     println!("Performance:{},{},{},{},{},{},{},{},{},{}", test_file, scl, pred,
              comp_size as f64/ org_size as f64,
-             1000000000.0 * org_size as f64 / duration1.as_nanos() as f64 / 1024.0/1024.0,
-             1000000000.0 * org_size as f64 / duration2.as_nanos() as f64 / 1024.0/1024.0,
+             duration1.as_nanos() as f64,
+             duration2.as_nanos() as f64,
              1000000000.0 * org_size as f64 / duration3.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration4.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration5.as_nanos() as f64 / 1024.0/1024.0,
@@ -299,8 +299,8 @@ pub fn run_buff_majority_encoding_decoding(test_file:&str, scl:usize,pred: f64) 
     //
     println!("Performance:{},{},{},{},{},{},{},{},{},{}", test_file, scl, pred,
              comp_size as f64/ org_size as f64,
-             1000000000.0 * org_size as f64 / duration1.as_nanos() as f64 / 1024.0/1024.0,
-             1000000000.0 * org_size as f64 / duration2.as_nanos() as f64 / 1024.0/1024.0,
+             duration1.as_nanos() as f64,
+             duration2.as_nanos() as f64,
              1000000000.0 * org_size as f64 / duration3.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration4.as_nanos() as f64 / 1024.0/1024.0,
              1000000000.0 * org_size as f64 / duration5.as_nanos() as f64 / 1024.0/1024.0,
